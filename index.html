@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Text Editor</title>
+       <script src="https://cdn.tailwindcss.com"></script>
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+              integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+       <div class="container mx-auto w-3/4 mt-24 text-center mockup-window border bg-base-300">
+              <h1 class="container mx-auto text-center text-2xl pb-4 font-bold text-gray-800">Random Text Editor</h1>
+              <div class="flex justify-center px-4 py-4 bg-base-300">
+                     <div class="navbar bg-base-100 px-4 rounded-xl">
+                            <div class="navbar-start flex gap-4">
+                                   <button id="bold-btn">
+                                          <i class="fa fa-bold" aria-hidden="true"></i>
+                                   </button>
+                                   <button id="i-btn">
+                                          <i class="fa fa-italic" aria-hidden="true"></i>
+                                   </button>
+                                   <button id="u-btn">
+                                          <i class="fa fa-underline" aria-hidden="true"></i>
+                                   </button>
+
+                            </div>
+                            <div class="navbar-center flex gap-4">
+                                   <button id="a-left"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                                   <button id="a-center"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+                                   <button id="a-right"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+                                   <button id="a-just"><i class="fa fa-align-justify" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="navbar-end flex gap-4">
+                                   <select id="text-size" class="select select-ghost w-14 max-w-xs bg-base-200 h-10 p-1">
+                                          <option value="8px">8</option>
+                                          <option value="10px">10</option>
+                                          <option value="12px">12</option>
+                                          <option value="14px">14</option>
+                                          <option value="16px">16</option>
+                                          <option value="18px" selected>18</option>
+                                          <option value="20px">20</option>
+                                          <option value="22px">22</option>
+                                          <option value="24px">24</option>
+                                          <option value="26px">26</option>
+                                          <option value="28px">28</option>
+                                          <option value="30px">30</option>
+                                          <option value="32px">32</option>
+                                          <option value="34px">34</option>
+                                          <option value="40px">40</option>
+                                          <option value="48px">48</option>
+                                   </select>
+                                   <select class="select select-ghost w-14 max-w-xs bg-base-200 h-10 p-1" id="text-case">
+                                          <option disabled selected>aA</option>
+                                          <option value="uppercase">AA</option>
+                                          <option value="capitalize">Aa</option>
+                                          <option value="lowercase">aa</option>
+                                   </select>
+                                   <input type="color" id="text-color" class="w-14 max-w-xs bg-base-200 h-10 p-1">
+                            </div>
+                     </div>
+              </div>
+              <div class="px-5 pb-5">
+                     <textarea placeholder="Type your text here" id="text-field" class="textarea p-5 w-full h-96 rounded-xl"></textarea>
+              </div>
+       </div>
+
+
+
+       <script src="main.js"></script>
+</body>
+
+</html>
